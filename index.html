@@ -5,73 +5,154 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
-      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-      crossorigin="anonymous"
+      type="text/css"
+      media="screen"
+      href="./public/bundle.css"
     />
+    <script src="./public/bundle.js"></script>
   </head>
   <body>
-    <div class="header">HEADER</div>
-    <div class="container">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-      est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-      do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-      ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint Lorem
-      ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-      nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-      non proident, sunt in culpa qui officia deserunt mollit anim id est
-      laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-      eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-      ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-      <div class="caps">
-        <a href="#" class="action float" id="menu-share">
-          <i class="fa fa-share my-float"></i>
-        </a>
-        <ul>
-          <li>
-            <a href="#">
-              <i class="fa fa-facebook my-float"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="fa fa-google-plus my-float"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="fa fa-twitter my-float"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <!-- <div class="item police">
-        <img src="/images/police.svg" width="100" alt="Item 2" />
-      </div>
-      <div class="item cowboy">
-        <img src="/images/cowboy.svg" width="100" alt="Item 3" />
-      </div>
-      <div class="item doctor">
-        <img src="/images/doctor.svg" width="100" alt="Item 4" />
-      </div> -->
-    </div>
-    <div class="footer">FOOTER</div>
+    <div class="grid">
+      <aside class="sidenav">
+        <div class="sidenav__brand">
+          <i class="fas fa-feather-alt sidenav__brand-icon"></i>
+          <a class="sidenav__brand-link" href="#"
+            >Ux<span class="text-light">Pro</span></a
+          >
+          <i class="fas fa-times sidenav__brand-close"></i>
+        </div>
+        <div class="sidenav__profile">
+          <div class="sidenav__profile-avatar"></div>
+          <div class="sidenav__profile-title text-light">Matthew H</div>
+        </div>
 
-    <script type="module" src="./public/bundle.js"></script>
+        <div class="row row--align-v-center row--align-h-center">
+          <ul class="navList">
+            <li class="navList__heading">
+              documents<i class="far fa-file-alt"></i>
+            </li>
+            <li>
+              <div class="navList__subheading row row--align-v-center">
+                <span class="navList__subheading-icon"
+                  ><i class="fas fa-briefcase-medical"></i
+                ></span>
+                <span class="navList__subheading-title">insurance</span>
+              </div>
+              <ul class="subList subList--hidden">
+                <li class="subList__item">medical</li>
+                <li class="subList__item">vision</li>
+                <li class="subList__item">dental</li>
+              </ul>
+            </li>
+            <li>
+              <div class="navList__subheading row row--align-v-center">
+                <span class="navList__subheading-icon"
+                  ><i class="fas fa-plane-departure"></i
+                ></span>
+                <span class="navList__subheading-title">travel</span>
+              </div>
+              <ul class="subList subList--hidden">
+                <li class="subList__item">domestic</li>
+                <li class="subList__item">foreign</li>
+                <li class="subList__item">misc</li>
+              </ul>
+            </li>
+            <li>
+              <div class="navList__subheading row row--align-v-center">
+                <span class="navList__subheading-icon"
+                  ><i class="far fa-angry"></i
+                ></span>
+                <span class="navList__subheading-title">taxes</span>
+              </div>
+              <ul class="subList subList--hidden">
+                <li class="subList__item">current</li>
+                <li class="subList__item">archives</li>
+              </ul>
+            </li>
+
+            <li class="navList__heading">
+              messages<i class="far fa-envelope"></i>
+            </li>
+            <li>
+              <div class="navList__subheading row row--align-v-center">
+                <span class="navList__subheading-icon"
+                  ><i class="fas fa-envelope"></i
+                ></span>
+                <span class="navList__subheading-title">inbox</span>
+              </div>
+              <ul class="subList subList--hidden">
+                <li class="subList__item">primary</li>
+                <li class="subList__item">social</li>
+                <li class="subList__item">promotional</li>
+              </ul>
+            </li>
+
+            <li>
+              <div class="navList__subheading row row--align-v-center">
+                <span class="navList__subheading-icon"
+                  ><i class="fas fa-eye"></i
+                ></span>
+                <span class="navList__subheading-title">unread</span>
+              </div>
+              <ul class="subList subList--hidden">
+                <li class="subList__item">primary</li>
+                <li class="subList__item">social</li>
+                <li class="subList__item">promotional</li>
+              </ul>
+            </li>
+
+            <li class="navList__heading">
+              Events<i class="fas fa-calendar-alt"></i>
+            </li>
+            <li>
+              <div class="navList__subheading row row--align-v-center">
+                <span class="navList__subheading-icon"
+                  ><i class="fas fa-wine-glass-alt"></i
+                ></span>
+                <span class="navList__subheading-title">weddings</span>
+              </div>
+              <ul class="subList subList--hidden">
+                <li class="subList__item">past</li>
+                <li class="subList__item">present</li>
+                <li class="subList__item">future</li>
+              </ul>
+            </li>
+            <li>
+              <div class="navList__subheading row row--align-v-center">
+                <span class="navList__subheading-icon"
+                  ><i class="fas fa-school"></i
+                ></span>
+                <span class="navList__subheading-title">playdates</span>
+              </div>
+              <ul class="subList subList--hidden">
+                <li class="subList__item">weirdos</li>
+                <li class="subList__item">smarties</li>
+                <li class="subList__item">nerds</li>
+              </ul>
+            </li>
+            <li>
+              <div class="navList__subheading row row--align-v-center">
+                <span class="navList__subheading-icon"
+                  ><i class="fas fa-users"></i
+                ></span>
+                <span class="navList__subheading-title">networking</span>
+              </div>
+              <ul class="subList subList--hidden">
+                <li class="subList__item">tech</li>
+                <li class="subList__item">automotive</li>
+                <li class="subList__item">UX research</li>
+                <li class="subList__item">development</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </aside>
+    </div>
   </body>
 </html>
