@@ -129,39 +129,30 @@ a {
   background-color: #252f3d;
   list-style-type: none;
 }
-.navList__heading {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 16px 16px 3px;
-  color: rgba(255, 255, 255, 0.5);
-  text-transform: uppercase;
-  font-size: 15px;
-}
+
 .navList__subheading {
   position: relative;
-  padding: 10px 30px;
+  padding: 20px 24px;
   color: #fff;
   font-size: 16px;
   text-transform: capitalize;
   border-top: 1px solid #404854;
   /* border-bottom: 1px solid #ffffff; */
 }
-.navList__subheading-icon {
+/* .navList__subheading-icon {
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 12px;
   color: rgba(255, 255, 255, 0.5);
   width: 12px;
-}
-.navList__subheading-title {
-  margin: 0 15px;
+} */
+/* .navList__subheading-title {
+  margin: 0 0px;
   font: normal 500 15px/20px Roboto;
   color: #ffffff;
-}
-.navList__subheading:after {
+} */
+/* .navList__subheading:after {
   position: absolute;
   content: "";
   height: 6px;
@@ -172,15 +163,31 @@ a {
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   transform: rotate(225deg);
   transition: all 0.2s;
+} */
+
+/* x-navlist-subheading:after {
+  position: absolute;
+  content: "";
+  height: 6px;
+  width: 6px;
+  top: 17px;
+  right: 25px;
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  transform: rotate(225deg);
+  transition: all 0.2s;
+} */
+
+x-navlist-subheading--open {
+  /* background-color: #18212b; */
+  background-color: red;
 }
-.navList__subheading:hover {
-  background-color: #2b323c;
+
+x-navlist-subheading--open:hover {
+  background-color: #18212b;
   cursor: pointer;
 }
-.navList__subheading--open {
-  background-color: #18212b;
-}
-.navList__subheading--open:after {
+x-navlist-subheading--open:after {
   transform: rotate(315deg);
 }
 .navList .subList {
@@ -193,24 +200,25 @@ a {
   max-height: 200px;
   transition: all 0.4s ease-in-out;
 }
-.navList .subList__item {
+/* .navList .subList__item {
   padding: 8px;
   text-transform: capitalize;
   padding: 8px 30px;
   color: rgba(255, 255, 255, 0.7);
   font: normal 500 14px/20px Roboto;
-}
+} */
 .navList .subList__item:first-child {
   padding-top: 15px;
 }
-.navList .subList__item:hover {
+/* .navList .subList__item:hover {
   background-color: #2b323c;
   cursor: pointer;
-}
-.navList .subList--hidden {
+  color: #6ec2f2;
+} */
+/* .navList .subList--hidden {
   visibility: hidden;
   max-height: 0;
-}
+} */
 
 @media only screen and (min-width: 46.875em) {
   .grid {

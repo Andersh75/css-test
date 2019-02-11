@@ -30,6 +30,7 @@
     "rollup-plugin-scss": "^1.0.0"
   },
   "dependencies": {
-    "jquery": "^3.3.1"
+    "jquery": "^3.3.1",
+    "lit-element": "^2.0.1"
   }
 }

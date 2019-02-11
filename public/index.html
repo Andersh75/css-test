@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" media="screen" href="./bundle.css" />
+    <script src="./bundle.js"></script>
+  </head>
+  <body>
+    <div class="grid">
+      <aside class="sidenav">
+        <div class="sidenav__brand">
+          <i class="fas fa-feather-alt sidenav__brand-icon"></i>
+          <a class="sidenav__brand-link" href="#"
+            >Ux<span class="text-light">Pro</span></a
+          >
+          <i class="fas fa-times sidenav__brand-close"></i>
+        </div>
+        <div class="sidenav__profile">
+          <div class="sidenav__profile-avatar"></div>
+          <div class="sidenav__profile-title text-light">Matthew H</div>
+        </div>
+
+        <div class="row row--align-v-center row--align-h-center">
+          <ul class="navList">
+            <li>
+              <x-navlist></x-navlist>
+            </li>
+            <li>
+              <x-navlist></x-navlist>
+            </li>
+            <li>
+              <x-navlist></x-navlist>
+            </li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+    <x-sublist-item></x-sublist-item>
+  </body>
+</html>
